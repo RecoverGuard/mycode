@@ -1,5 +1,5 @@
 # mycode
 
-learning to track my code /n
-this is a change
+learning to track my code.
+ this is a change
 
