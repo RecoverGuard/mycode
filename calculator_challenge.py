@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #this challenge is to create a calculator
 
 
@@ -18,8 +19,8 @@ cont = 'yes'
 
 while cont == 'yes' or cont == 'Yes':
     print("Welcome to 'MY CALCULATOR LITE'!")
-    x = int(input("please select your first integer: "))
-    y = int(input("Please select a second integer: "))
+    x = float(input("please select your first integer: "))
+    y = float(input("Please select a second integer: "))
     operator = input("please select an operator(+, -, /, *): ")
 
 
