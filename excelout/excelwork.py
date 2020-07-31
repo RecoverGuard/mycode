@@ -10,9 +10,9 @@ import pyexcel
 def get_ip_data():
     input_ip = input("\nWhat is the IP address? ")
     input_subnet = input("What is your Subnet Mask? ")
-    input_interface = input("What is your interface? ")
+    input_interface = input("What is your Interface? ")
     input_driver = input("What is the driver associated with this device? ")
-    d = {"IP": input_ip, "driver": input_driver}
+    d = {"IP": input_ip, "driver": input_driver, "Subnet Mask" : input_subnet, "Interface" : input_interface}
     return d
 
 ## This code is left turned off, but might help visualize how pyexcel works with data sets.
