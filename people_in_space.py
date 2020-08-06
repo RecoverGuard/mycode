@@ -1,8 +1,15 @@
 #!/usr/bin/env
+import requests
+import json
 
-astro= {"message": "success", "number": 5, "people": [{"craft": "ISS", "name": "Chris Cassidy"}, {"craft": "ISS", "name": "Anatoly Ivanishin"}, {"craft": "ISS", "name": "Ivan Vagner"}, {"craft": "ISS", "name": "Doug Hurley"}, {"craft": "ISS", "name": "Bob Behnken"}]}
 
-print(f'People in space: {astro["number"]}')  
-print()
-for x in astro['people']:
+url = "http://api.open-notify.org/astros.json"
+response = requests.get(url)
+
+astros= response.json()
+print(astros)
+
+print(f"People in space: ", astros['number'])
+
+for x in astros['people']:
     print(x['name'] + ' is on the ' + x['craft'])
