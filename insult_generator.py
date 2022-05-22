@@ -1,10 +1,12 @@
+# In order for this code to work poroperly, you must create a separate file for the range of insults you would like to be generated.
+# Steps: uncomment line 8 then Plug your file path into line 8.
 #!/usr/bin/env python3
 
 import random
 
 num = int(input("How many Shakespearean insults would you like? "))
 
-insult_list = open("/home/student/mycode/insults.txt", "r")
+#insult_list = open("*FILE PATH*", "r")
 insult = insult_list.readlines()
 
 
